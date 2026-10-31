@@ -8,9 +8,9 @@ This package contains connection metadata and a workflow skill, with no credenti
 
 ## ChatGPT
 
-Install Mealprep from the marketplace in ChatGPT Plugins, enable it, and run its setup.
+Install Mealprep from the marketplace in ChatGPT Plugins and enable it.
 The package includes the MCP connection: complete its built-in OAuth prompt, sign in and select the household. No separate MCP registration or copied credential is needed in hosts supporting bundled servers.
-If an earlier version was installed, refresh the marketplace and update to 2.3.2 or later, then reopen the conversation.
+If an earlier version was installed, refresh the marketplace and update to 2.3.3 or later, then reopen the conversation.
 Account/workspace policies apply. Hosts that do not support bundled MCP servers need a registered cloud connector; this package does not fabricate an app ID.
 
 ## Claude

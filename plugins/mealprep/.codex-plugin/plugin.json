@@ -1,6 +1,6 @@
 {
   "name": "mealprep",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Household recipes, food data, inventory, meal planning and guided cooking through authorized MCP tools.",
   "author": {
     "name": "Mealprep"
@@ -29,10 +29,5 @@
     "defaultPrompt": [
       "Use Mealprep to suggest three dinners from my pantry. Do not change anything yet."
     ]
-  },
-  "extensions": {
-    "com.openai": {
-      "onboardingSkill": "./skills/setup/SKILL.md"
-    }
   }
 }

@@ -3,7 +3,7 @@ name: mealprep
 description: Help with household meals, fridge stock, groceries, nutrition and guided cooking through Mealprep's authorized MCP connection.
 ---
 
-This plugin includes its MCP connection. Discover its tools through the host if needed, then start with mealprep_overview. If authentication is required, use the bundled server's Connect action and the setup skill; do not ask for manual MCP registration or secrets. Never say pantry access succeeded without a successful tool response. Seven tools cover the application:
+This plugin includes its MCP connection. Discover its tools through the host if needed, then start with mealprep_overview. If authentication is required, use the bundled server's Connect action; do not ask for manual MCP registration or secrets. Never say pantry access succeeded without a successful tool response. Seven tools cover the application:
 - mealprep_search: catalogue recipes, saved recipes, foods, barcodes, meal ideas.
 - mealprep_read: full recipe/source/product/plan/cooking/photo records.
 - mealprep_history: stock, prepared food, sessions, grocery lists and intake.

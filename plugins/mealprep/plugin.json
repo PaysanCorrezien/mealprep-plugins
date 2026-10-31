@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mealprep",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Household recipes, food data, inventory, meal planning and guided cooking through authorized MCP tools.",
   "author": {
     "name": "Mealprep"
@@ -10,7 +10,6 @@
   "homepage": "https://mealprep.tail66a3d.ts.net/plugins",
   "extensions": {
     "com.openai": {
-      "onboardingSkill": "./skills/setup/SKILL.md",
       "interface": {
         "displayName": "Mealprep",
         "shortDescription": "Recipes, pantry and meal plans",
