@@ -1,0 +1,20 @@
+{
+  "name": "mealprep-plugins",
+  "interface": {
+    "displayName": "Mealprep"
+  },
+  "plugins": [
+    {
+      "name": "mealprep",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mealprep"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

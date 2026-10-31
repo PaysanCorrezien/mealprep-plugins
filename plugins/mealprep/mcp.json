@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mealprep": {
+      "type": "streamable-http",
+      "url": "https://mealprep.tail66a3d.ts.net/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "resource": "https://mealprep.tail66a3d.ts.net/mcp",
+            "baseScopes": [
+              "mealprep.read"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

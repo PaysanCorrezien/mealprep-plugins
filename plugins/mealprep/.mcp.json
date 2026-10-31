@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mealprep": {
+      "type": "http",
+      "url": "https://mealprep.tail66a3d.ts.net/mcp"
+    }
+  }
+}

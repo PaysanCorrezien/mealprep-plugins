@@ -1,0 +1,15 @@
+{
+  "name": "mealprep-plugins",
+  "owner": {
+    "name": "Mealprep"
+  },
+  "plugins": [
+    {
+      "name": "mealprep",
+      "source": "./plugins/mealprep",
+      "version": "2.3.1",
+      "description": "Household meals, pantry and cooking through scoped OAuth MCP.",
+      "license": "MIT"
+    }
+  ]
+}

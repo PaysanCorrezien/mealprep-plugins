@@ -1,0 +1,13 @@
+{
+  "name": "mealprep",
+  "version": "2.3.1",
+  "description": "Household recipes, food data, inventory, meal planning and guided cooking through authorized MCP tools.",
+  "author": {
+    "name": "Mealprep"
+  },
+  "license": "MIT",
+  "homepage": "https://mealprep.tail66a3d.ts.net/plugins",
+  "privacyPolicyUrl": "https://mealprep.tail66a3d.ts.net/plugins/privacy",
+  "icon": "./assets/icon.png",
+  "repository": "https://github.com/PaysanCorrezien/mealprep-plugins"
+}
