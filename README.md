@@ -2,7 +2,25 @@
 
 Public, credential-free plugin distribution for Mealprep. The application repository and its history are not included.
 
-## ChatGPT Desktop / Codex: Add plugin marketplace
+## Install in ChatGPT or Claude — no terminal needed
+
+Copy this marketplace source:
+
+```text
+https://github.com/PaysanCorrezien/mealprep-plugins.git
+```
+
+**ChatGPT:** [Open Plugins](https://chatgpt.com/plugins) → **+ → Add plugin marketplace**. Paste the source, set **Git ref** to `main`, leave **Sparse paths** empty, then install **Mealprep**. Complete Mealprep OAuth and select your household, starting read-only. In a new conversation, select Mealprep with `@`.
+
+**Claude Chat / Cowork / Desktop:** [Open Customize → Plugins](https://claude.ai/customize/plugins) → **Add → Add marketplace**. Paste the same source and add **Mealprep**. Open the plugin’s **Connectors** tab → **Mealprep → Add / Connect**, then complete Mealprep OAuth. The connector must show **Connected** before tools can read your stock. The plugin is saved to your Claude account; a CLI installation is machine-local instead.
+
+Availability depends on the client, account and organization policies. If your ChatGPT mode has no marketplace option, use the custom MCP connection below. Claude also accepts the [plugin ZIP](https://mealprep.tail66a3d.ts.net/plugins/mealprep.zip) through **Add → Upload plugin**.
+
+Try: “Read my stock, suggest three dinners and explain what is missing. Do not change anything yet.”
+
+[Guided setup and connection management](https://mealprep.tail66a3d.ts.net/plugins)
+
+## Marketplace field values
 
 - Source: https://github.com/PaysanCorrezien/mealprep-plugins.git
 - Git ref: main
@@ -40,4 +58,4 @@ GitHub reachability and Mealprep reachability are separate. If installation succ
 
 This repository does not constitute an approved public-directory listing. Successful marketplace installation alone is not evidence of a working ChatGPT conversation.
 
-Official documentation: https://developers.openai.com/plugins/build/plugins and https://developers.openai.com/plugins/deploy/connect-chatgpt
+Official documentation: https://developers.openai.com/plugins/build/plugins, https://developers.openai.com/plugins/deploy/connect-chatgpt and https://claude.com/docs/plugins/overview
