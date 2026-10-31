@@ -1,0 +1,38 @@
+{
+  "name": "mealprep",
+  "version": "2.3.2",
+  "description": "Household recipes, food data, inventory, meal planning and guided cooking through authorized MCP tools.",
+  "author": {
+    "name": "Mealprep"
+  },
+  "license": "MIT",
+  "homepage": "https://mealprep.tail66a3d.ts.net/plugins",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Mealprep",
+    "shortDescription": "Recipes, pantry and meal plans",
+    "longDescription": "Household recipes, food data, inventory, meal planning and guided cooking through authorized MCP tools.",
+    "developerName": "Mealprep",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://mealprep.tail66a3d.ts.net/plugins",
+    "supportURL": "https://mealprep.tail66a3d.ts.net/plugins/support",
+    "termsOfServiceURL": "https://mealprep.tail66a3d.ts.net/plugins/terms",
+    "privacyPolicyURL": "https://mealprep.tail66a3d.ts.net/plugins/privacy",
+    "brandColor": "#153E35",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Use Mealprep to suggest three dinners from my pantry. Do not change anything yet."
+    ]
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md"
+    }
+  }
+}
