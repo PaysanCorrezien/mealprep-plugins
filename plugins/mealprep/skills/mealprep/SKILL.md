@@ -10,7 +10,7 @@ This plugin includes its MCP connection. Discover its tools through the host if 
 - mealprep_update_meal: add, change, remove or move items in an existing meal.
 - mealprep_get_daily_intake: inspect recorded daily intake and incomplete nutrition.
 - mealprep_save_favorite: explicitly favorite or validate a product.
-- mealprep_overview: current household, access, datasets and supported workflows.
+- mealprep_overview: current household, access, datasets, server version and supported workflows. If the host still exposes only eight tools, its server.compatibility.actions maps the six journal tools to actions callable through the existing preview/apply tools. Use mealprep_actions(action) for the schema; journal writes through mealprep_apply require outer confirm=true and stable idempotencyKey but no separate preview. Read-only grants cannot write.
 - mealprep_search: catalogue recipes, saved recipes, foods, barcodes, meal ideas.
 - mealprep_read: full recipe/source/product/plan/cooking/photo records.
 - mealprep_history: stock, prepared food, sessions, grocery lists and intake.
