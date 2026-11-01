@@ -1,4 +1,4 @@
-# Mealprep · 2.4.1
+# Mealprep · 2.5.0
 
 MCP endpoint: https://mealprep.tail66a3d.ts.net/mcp
 Connection page and package updates: https://mealprep.tail66a3d.ts.net/plugins
@@ -10,7 +10,7 @@ This package contains connection metadata and a workflow skill, with no credenti
 
 Install Mealprep from the marketplace in ChatGPT Plugins and enable it.
 The package includes the MCP connection: complete its built-in OAuth prompt, sign in and select the household. No separate MCP registration or copied credential is needed in hosts supporting bundled servers.
-If an earlier version was installed, refresh the marketplace and update to 2.4.1 or later, then reopen the conversation.
+If an earlier version was installed, refresh the marketplace and update to 2.5.0 or later, then reopen the conversation.
 Account/workspace policies apply. Hosts that do not support bundled MCP servers need a registered cloud connector; this package does not fabricate an app ID.
 
 ## Claude
@@ -54,7 +54,7 @@ Merge this entry into .agents/plugins/marketplace.json without replacing other e
 
 “Look at my stock, suggest three dinners, and explain what I need. Do not change anything yet.”
 
-Seven workflow tools progressively reveal exact action schemas; an eighth optional read-only mealprep_render tool shows recipe/nutrition results in compatible hosts. This release adds usage guidance for canonical macro calculation, partial coverage, source provenance, publisher recipe drafts and expanded dish discovery. Read before changing data; preview, explain and apply only within user authorization. Keep client approval prompts enabled.
+Six direct food journal tools support product search, portion resolution, logging, correction, daily intake and explicit favorites. Seven advanced workflow tools progressively reveal other action schemas, and the optional read-only mealprep_render tool shows recipe/nutrition results in compatible hosts. Apply changes only within user authorization. Keep client approval prompts enabled.
 
 ## Reachability and security
 
