@@ -22,9 +22,22 @@ Try: “Read my stock, suggest three dinners and explain what is missing. Do not
 
 ## Already installed but no tools?
 
-Update to **2.3.4**: refresh this marketplace in your client, update Mealprep, and reopen the conversation. Complete the plugin’s built-in OAuth connection. Versions 2.3.0 and 2.3.1 could appear installed while current OpenAI clients silently rejected their MCP authentication metadata. Version 2.3.2 fixed that loader incompatibility. Version 2.3.4 adds Full access as the default consent choice for owners/editors. Since 2.3.3 there is one workflow skill focused on using the tools; authentication uses the client’s built-in Connect flow, with no separate setup skill.
+Update to **2.4.1**: refresh this marketplace in your client, update Mealprep, and reopen the conversation. Complete the plugin’s built-in OAuth connection. Versions 2.3.0 and 2.3.1 could appear installed while current OpenAI clients silently rejected their MCP authentication metadata. Version 2.3.2 fixed that loader incompatibility. Version 2.3.4 adds Full access as the default consent choice for owners/editors. Since 2.3.3 there is one workflow skill focused on using the tools; authentication uses the client’s built-in Connect flow, with no separate setup skill.
 
 Native acceptance with Codex 0.165.0 verifies bundled server discovery, real browser OAuth, all seven tools, and actual overview/stock calls. Installation alone is not treated as a successful connection. Hosted ChatGPT modes that require a registered cloud connector still have their own account-side registration requirements; this repository does not invent an app ID.
+
+## Version 2.4.1
+
+Seven workflow tools plus optional `mealprep_render` use the same authenticated MCP endpoint. This release updates the bundled skill for structured nutrition, canonical food IDs, per-ingredient review reasons, source provenance, publisher recipe imports and expanded catalogue searches. The renderer supports recipe/nutrition inspection and unsaved match review in compatible hosts; headless output remains available. Real ChatGPT component acceptance is still unverified.
+
+Refresh this Git marketplace, update the installed Mealprep plugin when offered, and start a new conversation to reload its skill/tool inventory. A marketplace refresh fetches the source; some hosts still require the installed-plugin update action. The OAuth connection and household permissions do not need to be recreated for this version. Existing read-only grants remain read-only. A manually uploaded ChatGPT web ZIP is separate: upload the current [2.4.1 web ZIP](https://mealprep.tail66a3d.ts.net/plugins/chatgpt-web.zip) to update that copy.
+
+Codex CLI update:
+
+```sh
+codex plugin marketplace upgrade mealprep-plugins
+codex plugin add mealprep@mealprep-plugins
+```
 
 ## Marketplace field values
 
@@ -58,7 +71,7 @@ Open /mcp and complete OAuth. For Claude cloud, add the MCP URL in connector set
 
 Setup: https://mealprep.tail66a3d.ts.net/plugins
 
-Seven progressively-discovered MCP tools cover recipes, food data, stock, planning, cooking and consumption. Each client must authenticate separately. No passwords, tokens, API keys, client secrets or household data are included. Full access is selected by default for owners/editors when the client requests it; you can choose Read only. Explicit read-only requests and viewer memberships stay read-only. Existing read-only grants require reconnecting and a new consent to enable writes. Preserve client approval prompts and revoke access in Mealprep Settings.
+Seven progressive workflow tools and one optional read-only renderer cover recipes, food data, stock, planning, cooking and consumption. Each client must authenticate separately. No passwords, tokens, API keys, client secrets or household data are included. Full access is selected by default for owners/editors when the client requests it; you can choose Read only. Explicit read-only requests and viewer memberships stay read-only. Existing read-only grants require reconnecting and a new consent to enable writes. Preserve client approval prompts and revoke access in Mealprep Settings.
 
 GitHub reachability and Mealprep reachability are separate. If installation succeeds but OAuth times out on a Tailscale client, resolve the deployment's TCP/443 tailnet grant; do not weaken TLS verification or expose its private/LAN auto-login listener.
 
