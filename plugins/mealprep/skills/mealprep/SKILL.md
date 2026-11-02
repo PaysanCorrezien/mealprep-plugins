@@ -4,7 +4,7 @@ description: Help with household meals, fridge stock, groceries, nutrition and g
 ---
 
 This plugin includes its MCP connection. Discover its tools through the host if needed, then start with mealprep_overview. If authentication is required, use the bundled server's Connect action; do not ask for manual MCP registration or secrets. Never claim a read, calculation or write succeeded without a successful tool response. Six direct food journal tools, seven advanced workflow tools and one optional read-only view cover the application:
-- mealprep_search_products: find catalog products with provenance, images and household indicators; searching does not record a purchase.
+- mealprep_search_products: find and show real product packaging, with provenance and household indicators, even for a look-only request. For Aldi chocolate use query="chocolat", retailer="Aldi"; set country only if known. Present several returned image_front_url/image_url images and identifiers, or the gallery, and ask which is correct. Reuse these real images instead of unrelated image search. Missing images stay unavailable. Searching or selecting never records a purchase, favorite or meal.
 - mealprep_resolve_food: resolve catalog foods and quantities, retaining conversion source and uncertainty.
 - mealprep_log_meal: record an explicitly requested meal for a person, date and slot.
 - mealprep_update_meal: add, change, remove or move items in an existing meal.
